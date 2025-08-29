@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+/* Typography */
+h1 { @apply text-3xl font-bold tracking-tight; }
+h2 { @apply text-2xl font-semibold; }
+h3 { @apply text-xl font-semibold; }
+p  { @apply leading-relaxed; }
+
+/* Responsive bumps */
+@media (min-width: 768px) {
+  h1 { @apply text-5xl; }
+  h2 { @apply text-3xl; }
+  h3 { @apply text-2xl; }
+}
+
+/* Buttons */
+.btn-primary { @apply inline-flex items-center justify-center rounded-xl px-4 py-2 font-medium shadow-sm bg-gray-900 text-white hover:bg-black transition; }
+.btn-ghost   { @apply inline-flex items-center justify-center rounded-xl px-4 py-2 font-medium hover:bg-gray-100 transition; }
